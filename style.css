@@ -1,11 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
 body {
 	margin: 0%;
+	font-family: "Roboto", sans-serif;
 }
 
 nav {
-	padding: 1em;
-	padding-left: 3.5em;
+	padding: 1.5em;
+	padding-left: 4em;
 	padding-right: 3.5em;
+	height: 2.5em;
 	display: flex;
 	align-items: center;
 	background-color: black;
@@ -18,14 +22,14 @@ nav {
 }
 
 .logo img {
-	width: 10em;
+	width: 8.5em;
 	height: auto;
 }
 
 .logo a {
 	color: white;
 	text-decoration: none;
-	margin-right: 1em;
+	margin-right: 0.5em;
 }
 
 .logo a:link {
@@ -35,6 +39,9 @@ nav {
 
 .help-center {
 	font-size: 1.5em;
+	padding-left: 0.5em;
+	border-left: 2px solid white;
+	font-weight: lighter;
 }
 
 .topbar-buttons {
