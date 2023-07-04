@@ -79,3 +79,20 @@ button {
 	background-color: white;
 	color: black;
 }
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #dadbf1;
+	padding-top: 80px;
+	padding-bottom: 115px;
+}
+
+header h1 {
+	margin: 0;
+	margin-bottom: 0.25em;
+	font-size: 4.5em;
+	font-weight: 400;
+}
