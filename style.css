@@ -106,3 +106,47 @@ header input {
 	font-weight: 100;
 	border: 1px solid #000;
 }
+
+main {
+	display: grid;
+}
+
+.list-item {
+	display: flex;
+	height: fit-content;
+	padding: 1em;
+}
+
+.list-item h3 {
+	font-size: 18px;
+	font-weight: 500;
+	margin-top: 0;
+}
+
+.list-desc {
+	margin-top: 1em;
+	margin-bottom: 2em;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.list-desc a {
+	text-decoration: none;
+	color: #4c5fd5;
+}
+
+main a:-webkit-any-link {
+	color: #4c5fd5;
+	text-decoration: none;
+}
+
+.list-icon {
+	width: 4em;
+	height: 4em;
+	margin-right: 1.5em;
+}
+
+.list-icon-img {
+	width: 4em;
+	height: 4em;
+}
