@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
+* {
+	scrollbar-color: white;
+	scrollbar-width: thin;
+}
+
 body {
 	margin: 0%;
 	font-family: "Roboto", sans-serif;
@@ -109,12 +114,15 @@ header input {
 
 main {
 	display: grid;
+	padding: 2.5em;
+	padding-top: 5em;
 }
 
 .list-item {
 	display: flex;
 	height: fit-content;
-	padding: 1em;
+	padding: 0.7em;
+	margin-bottom: 2em;
 }
 
 .list-item h3 {
