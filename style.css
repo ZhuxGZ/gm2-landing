@@ -155,11 +155,12 @@ main a:-webkit-any-link {
 }
 
 footer {
-	height: 100vh;
+	max-height: 100vh;
+	min-height: 42em;
 	background-color: #000;
 	color: #fff;
 	padding-left: 1em;
-	padding-top: 1em;
+	padding-top: 2em;
 }
 
 .footerInner {
@@ -182,7 +183,7 @@ footer {
 .footerInner ul li {
 	font-size: 16px;
 	font-weight: 500;
-	margin-bottom: 0.25em;
+	margin-bottom: 0.4em;
 }
 .footerCompany ul {
 	margin-bottom: 2em;
@@ -194,7 +195,7 @@ footer {
 }
 
 .logo-footer {
-	height: 1.8em;
+	height: fit-content;
 	margin-bottom: 1.5em;
 }
 
@@ -220,5 +221,30 @@ footer {
 		gap: 1em;
 		align-content: center;
 		justify-content: center;
+	}
+
+	footer {
+		min-height: 20em;
+		padding-left: 2.5em;
+	}
+	.footerInner {
+		grid-template-columns: repeat(4, 25%);
+	}
+
+	.footerInner ul li {
+		font-size: 18px;
+	}
+
+	.footerCompany p {
+		font-size: 18px;
+	}
+
+	.footerCopyright {
+		padding: 1em;
+		margin-top: 3em;
+	}
+
+	.logo-footer svg {
+		height: 2em;
 	}
 }
