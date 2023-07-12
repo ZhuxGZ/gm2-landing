@@ -224,7 +224,7 @@ footer {
 	}
 
 	footer {
-		height: 47vh;
+		min-height: 20em;
 		padding-left: 2.5em;
 	}
 	.footerInner {
