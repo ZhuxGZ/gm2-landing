@@ -61,8 +61,69 @@ nav {
 }
 
 button {
+	background: transparent;
 	padding: 6px 22px;
+	border: none;
 }
+
+.burger-menu {
+	margin-left: auto;
+}
+
+.burger-menu .line {
+	transition: y 100ms ease-in 100ms, rotate 100ms ease-in, opacity 0ms 100ms;
+	transform-origin: center;
+}
+
+.burger-menu[aria-expanded="true"] .line {
+	transition: y 100ms ease-in, rotate 100ms ease-in 100ms, opacity 0ms 100ms;
+}
+
+.burger-menu[aria-expanded="true"] :is(.top, .bottom) {
+	y: 45;
+}
+
+.burger-menu[aria-expanded="true"] .top {
+	rotate: 45deg;
+}
+
+.burger-menu[aria-expanded="true"] .middle {
+	opacity: 0;
+}
+
+.burger-menu[aria-expanded="true"] .bottom {
+	rotate: -45deg;
+}
+
+.menu-mobile-closed {
+	display: none;
+}
+
+.menu-mobile {
+	display: grid;
+	border-top: 1px solid white;
+	background-color: #000;
+	max-width: 100%;
+	padding: 2em;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu-mobile button {
+	padding-top: 0.7em;
+	width: 15em;
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 0.7em;
+}
+
+button.submit-mobile {
+	border-bottom: 1px solid lightgray;
+}
+
 .topbar-buttons button {
 	border-radius: 0.5em;
 	font-size: 24px;
@@ -336,6 +397,14 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+	.burger-menu {
+		display: none;
+	}
+
+	.menu-mobile {
+		display: none;
+	}
+
 	.topbar-buttons {
 		display: block;
 	}
