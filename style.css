@@ -320,6 +320,15 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+	header {
+		padding-left: calc(3em + 20%);
+		padding-right: calc(3em + 25%);
+	}
+
+	.headerInner h1 {
+		font-size: 62px;
+	}
+
 	.list-container {
 		grid-template-columns: repeat(2, 35%);
 		column-gap: 3em;
