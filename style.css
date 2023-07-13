@@ -7,7 +7,7 @@ body {
 
 nav {
 	padding: 1.5em;
-	padding-left: 1em;
+	padding-left: 1.5em;
 	padding-right: 5em;
 	height: 2.5em;
 	display: flex;
@@ -21,9 +21,16 @@ nav {
 	align-items: center;
 }
 
-.logo img {
+.logo svg {
 	width: 8.5em;
 	height: auto;
+	margin-right: 0.4em;
+	margin-bottom: 0.1em;
+	transition: all 0.2s linear;
+}
+
+.logo a svg:hover {
+	opacity: 0.8;
 }
 
 .logo a {
@@ -39,9 +46,13 @@ nav {
 
 .help-center {
 	font-size: 1.5em;
-	padding-left: 0.2em;
+	padding-left: 0.4em;
 	border-left: 2px solid white;
 	font-weight: 300;
+}
+
+.help-center a:hover {
+	text-decoration: underline;
 }
 
 .topbar-buttons {
@@ -242,6 +253,11 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+	nav {
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+
 	header {
 		padding-left: calc(1em + 20%);
 		padding-right: calc(1em + 20%);
@@ -320,6 +336,10 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+	.topbar-buttons {
+		display: block;
+	}
+
 	header {
 		padding-left: calc(3em + 20%);
 		padding-right: calc(3em + 25%);
