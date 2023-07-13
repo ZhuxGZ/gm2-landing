@@ -81,30 +81,58 @@ button {
 }
 
 header {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	background-color: #dadbf1;
+	padding: 1.5em;
 	padding-top: 80px;
 	padding-bottom: 115px;
 }
 
-header h1 {
-	margin: 0;
-	margin-bottom: 0.25em;
-	font-size: 2em;
-	font-weight: 400;
+.headerInner {
+	position: relative;
 }
 
-header input {
-	width: 80%;
-	height: 3.3em;
-	padding-left: 1em;
-	border-radius: 0.2em;
-	font-size: larger;
-	font-weight: 100;
-	border: 1px solid #000;
+.headerInner h1 {
+	text-align: center;
+	font-size: 32px;
+	font-weight: 400;
+	margin-bottom: 1em;
+}
+
+.headerInner form {
+	position: relative;
+	z-index: 0;
+}
+
+.headerInner input {
+	position: relative;
+	width: 100%;
+	height: 3.5em;
+	padding: 1em;
+	border-radius: 0.25em;
+	border: 1.5px solid rgba(0, 0, 0, 0.579);
+	box-shadow: #191a1b56 1px 4px 10px;
+	font-size: 18px;
+	transition: all 0.3s linear;
+}
+
+.headerInner input:focus {
+	border-color: #4c5fd5 !important;
+	outline: 0;
+}
+
+.arrow-svg {
+	transform: translateY(-50%);
+	bottom: -17px;
+	right: 1px;
+	position: absolute;
+	z-index: 100;
+	height: 3em;
+	width: 3em;
+	transition: all 0.3s linear;
+}
+
+.arrow-svg:hover {
+	fill: #4c5fd5 !important;
 }
 
 .list-container {
@@ -214,6 +242,15 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+	header {
+		padding-left: calc(1em + 20%);
+		padding-right: calc(1em + 20%);
+	}
+
+	.headerInner h1 {
+		font-size: 42px;
+	}
+
 	.list-container {
 		margin-top: 5em;
 		grid-template-columns: repeat(2, 45%);
