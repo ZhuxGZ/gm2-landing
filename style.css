@@ -8,7 +8,7 @@ body {
 nav {
 	padding: 1.5em;
 	padding-left: 1.5em;
-	padding-right: 5em;
+	padding-right: 1.5em;
 	height: 2.5em;
 	display: flex;
 	align-items: center;
@@ -71,12 +71,12 @@ button {
 }
 
 .burger-menu .line {
-	transition: y 100ms ease-in 100ms, rotate 100ms ease-in, opacity 0ms 100ms;
+	transition: y 50ms ease-in 100ms, rotate 100ms ease-in, opacity 0ms 100ms;
 	transform-origin: center;
 }
 
 .burger-menu[aria-expanded="true"] .line {
-	transition: y 100ms ease-in, rotate 100ms ease-in 100ms, opacity 0ms 100ms;
+	transition: y 50ms ease-in, rotate 100ms ease-in 100ms, opacity 0ms 100ms;
 }
 
 .burger-menu[aria-expanded="true"] :is(.top, .bottom) {
@@ -104,20 +104,20 @@ button {
 	border-top: 1px solid white;
 	background-color: #000;
 	max-width: 100%;
-	padding: 2em;
+	padding: 4em;
 	align-items: center;
 	justify-content: center;
 }
 
 .menu-mobile button {
-	padding-top: 0.7em;
+	padding-top: 1em;
 	width: 15em;
 	background: none;
 	border: none;
 	color: #fff;
 	font-size: 20px;
 	font-weight: bold;
-	padding-bottom: 0.7em;
+	padding-bottom: 1em;
 }
 
 button.submit-mobile {
