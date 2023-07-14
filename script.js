@@ -1,4 +1,5 @@
 const button = document.querySelector("#burger-menu");
+const body = document.querySelector("body");
 const nav = document.querySelector("#nav");
 
 button.addEventListener("click", () => {
@@ -7,8 +8,10 @@ button.addEventListener("click", () => {
 	if (!currentState || currentState === "false") {
 		button.setAttribute("aria-expanded", "true");
 		nav.classList.add("menu-mobile");
+		body.classList.add("no-scroll");
 	} else {
 		button.setAttribute("aria-expanded", "false");
 		nav.classList.remove("menu-mobile");
+		body.classList.remove("no-scroll");
 	}
 });
