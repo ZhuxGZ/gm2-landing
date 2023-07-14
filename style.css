@@ -103,10 +103,13 @@ button {
 	display: grid;
 	border-top: 1px solid white;
 	background-color: #000;
-	max-width: 100%;
+	width: 100%;
+	box-sizing: border-box;
 	padding: 4em;
 	align-items: center;
 	justify-content: center;
+	position: absolute;
+	z-index: 10;
 }
 
 .menu-mobile button {
