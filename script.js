@@ -8,11 +8,11 @@ if (button != null) {
 
 		if (!currentState || currentState === "false") {
 			button.setAttribute("aria-expanded", "true");
-			nav.classList.add("menu-mobile");
+			nav.classList.add("active");
 			body.classList.add("no-scroll");
 		} else {
 			button.setAttribute("aria-expanded", "false");
-			nav.classList.remove("menu-mobile");
+			nav.classList.remove("active");
 			body.classList.remove("no-scroll");
 		}
 	});
