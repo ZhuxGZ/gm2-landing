@@ -101,7 +101,7 @@ button {
 	rotate: -45deg;
 }
 
-.menu-mobile-closed {
+.menu-mobile {
 	display: grid;
 	justify-content: center;
 	align-items: center;
@@ -116,12 +116,7 @@ button {
 	transition: all 0.5s ease-in-out;
 }
 
-.menu-mobile {
-	height: 20em;
-	padding: 5em;
-}
-
-.menu-mobile-closed button {
+.menu-mobile button {
 	width: 15em;
 	background: none;
 	border: none;
@@ -129,6 +124,11 @@ button {
 	font-size: 20px;
 	font-weight: bold;
 	padding-bottom: 1.3em;
+}
+
+.active {
+	height: 20em;
+	padding: 5em;
 }
 
 button.submit-mobile {
